@@ -1,0 +1,71 @@
+.board {
+  padding: 3em;
+  height: 302px;
+  width: 302px;
+  margin: auto;
+  border-top: 1pc black solid;
+  border-bottom: 1pc black solid;
+  border-left: 1pc black solid;
+  border-right: 1pc black solid;
+}
+
+.text {
+  text-align: center;
+}
+
+.rowTop {
+  float: left;
+  height: 100px;
+  width: 100px;
+
+}
+
+.rowMiddle {
+  float: left;
+  height: 100px;
+  width: 100px;
+
+}
+
+.rowRight {
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.Left-Top, .Top-Middle, .Right-Top  {
+  float: left;
+  height: 100px;
+  width: 100px;
+
+
+}
+.Left-Middle, .Center, .Right-Middle  {
+  float: left;
+  height: 100px;
+  width: 100px;
+
+}
+.Left-Bottom, .Bottom-Middle, .Right-Bottom  {
+  float: left;
+  height: 100px;
+  width: 100px;
+
+}
+
+.Left-Top, .Top-Middle, .Right-Top {
+  border-bottom: 1px black solid;
+}
+
+.Left-Bottom, .Bottom-Middle, .Right-Bottom {
+  border-top: 1px black solid;
+}
+
+.Top-Middle, .Center, .Bottom-Middle {
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+}
