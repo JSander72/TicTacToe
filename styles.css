@@ -7,31 +7,30 @@
   border-bottom: 1pc black solid;
   border-left: 1pc black solid;
   border-right: 1pc black solid;
-  cursor: pointer;
+  font-family: monospace;
+  text-align: center;
 }
 
 .text {
   text-align: center;
 }
 
-.rowTop {
+.row {
   float: left;
   height: 100px;
   width: 100px;
+ 
+
 
 }
 
-.rowMiddle {
+.row > div {
   float: left;
   height: 100px;
   width: 100px;
+  cursor: pointer;
+  font-size: 75px;
 
-}
-
-.rowRight {
-  float: left;
-  height: 100px;
-  width: 100px;
 }
 
 .clearfix {
@@ -57,6 +56,8 @@
   width: 100px;
 
 }
+
+/* this makes up the gird for the board */
 
 .Left-Top, .Top-Middle, .Right-Top {
   border-bottom: 1px black solid;
