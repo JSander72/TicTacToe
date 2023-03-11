@@ -19,12 +19,12 @@
   float: left;
   height: 100px;
   width: 100px;
- 
+
 
 
 }
 
-.row > div {
+.row>div {
   float: left;
   height: 100px;
   width: 100px;
@@ -37,20 +37,28 @@
   clear: both;
 }
 
-.Left-Top, .Top-Middle, .Right-Top  {
+.Left-Top,
+.Top-Middle,
+.Right-Top {
   float: left;
   height: 100px;
   width: 100px;
 
 
 }
-.Left-Middle, .Center, .Right-Middle  {
+
+.Left-Middle,
+.Center,
+.Right-Middle {
   float: left;
   height: 100px;
   width: 100px;
 
 }
-.Left-Bottom, .Bottom-Middle, .Right-Bottom  {
+
+.Left-Bottom,
+.Bottom-Middle,
+.Right-Bottom {
   float: left;
   height: 100px;
   width: 100px;
@@ -59,15 +67,37 @@
 
 /* this makes up the gird for the board */
 
-.Left-Top, .Top-Middle, .Right-Top {
+.Left-Top,
+.Top-Middle,
+.Right-Top {
   border-bottom: 1px black solid;
 }
 
-.Left-Bottom, .Bottom-Middle, .Right-Bottom {
+.Left-Bottom,
+.Bottom-Middle,
+.Right-Bottom {
   border-top: 1px black solid;
 }
 
-.Top-Middle, .Center, .Bottom-Middle {
+.Top-Middle,
+.Center,
+.Bottom-Middle {
   border-left: 1px black solid;
   border-right: 1px black solid;
+}
+
+/* .x {
+  color: rgb(6, 6, 45);
+  font-size: 80px;
+}
+
+.o {
+  color: rgb(78, 9, 9);
+  font-size: 80px;
+} */
+
+.resetButton {
+  display: none;
+  visibility: hidden;
+
 }
