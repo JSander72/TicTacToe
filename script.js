@@ -4,7 +4,7 @@ const player2 = "O";
 let gameState = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = player1;
 
-const cells = document.querySelectorAll("div");
+const cells = document.querySelectorAll(".row > div");
 
 cells.forEach((cell) => cell.addEventListener("click", cellClicked));
 
