@@ -10,6 +10,21 @@
   font-family: monospace;
   text-align: center;
 }
+.resetBoard {
+  position: relative;
+  padding: 3em;
+  height: 412px;
+  width: 412px;
+  margin: auto;
+  border-top: 1pc black solid;
+  border-bottom: 1pc black solid;
+  border-left: 1pc black solid;
+  border-right: 1pc black solid;
+  font-family: monospace;
+  text-align: center;
+
+}
+
 
 .text {
   text-align: center;
