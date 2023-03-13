@@ -26,15 +26,17 @@ function cellClicked() {
   if (checkWin()) {
     const result = document.querySelector(".text");
     result.textContent = `${currentPlayer} wins!`;
-    return;
     resetButton.hidden = false
+    return;
+
   }
 
   if (isDraw()) {
     const result = document.querySelector(".text");
     result.textContent = "It's a draw!";
-    return;
     resetButton.hidden = false
+    return;
+    
   }
 
   currentPlayer = currentPlayer === player1 ? player2 : player1;
