@@ -9,8 +9,8 @@ const cells = document.querySelectorAll(".row > div");
 cells.forEach((cell) => cell.addEventListener("click", cellClicked));
 
 // trying to add a reset funtion to the board but only seeing a reset button way - keep searching for option
-const resetButton = document.getElementById("reset");
-
+const resetButton = document.getElementById("resetButton");
+resetButton.hidden = true
 resetButton.addEventListener("click", resetGame);
 
 function cellClicked() {
@@ -27,12 +27,14 @@ function cellClicked() {
     const result = document.querySelector(".text");
     result.textContent = `${currentPlayer} wins!`;
     return;
+    resetButton.hidden = false
   }
 
   if (isDraw()) {
     const result = document.querySelector(".text");
     result.textContent = "It's a draw!";
     return;
+    resetButton.hidden = false
   }
 
   currentPlayer = currentPlayer === player1 ? player2 : player1;
@@ -64,6 +66,7 @@ function isDraw() {
   return gameState.every((cell) => {
     return cell !== "";
   });
+
 }
 
 function resetGame() {
@@ -75,13 +78,6 @@ function resetGame() {
 
   const result = document.querySelector(".text");
   result.textContent = "Tic Tac Toe";
+  resetButton.hidden = true
 }
 // trying to take the reset button function and make it invisible and only work once a game has been won
-function myFunction() {
-  var x = document.getElementById("resetButton");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
